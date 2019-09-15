@@ -1071,7 +1071,7 @@ build_package_verify_openssl() {
     manager = ARGV[0]
     packages = {
       "apt-get" => Hash.new {|h,k| "lib#{k}-dev" }.update(
-        "openssl" => "libssl-dev",
+        "openssl" => "libssl1.0-dev",
         "zlib" => "zlib1g-dev"
       ),
       "yum" => Hash.new {|h,k| "#{k}-devel" }.update(
